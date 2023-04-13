@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 4%, 69%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --gradient-bg-1: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    --gradient-circle: linear-gradient(hsla(256, 72%, 46%, 1) ,hsla(241, 72%, 46%, 0));
+}
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(assets/fonts/static/HankenGrotesk-Medium.ttf);
+    font-weight: 500;
+    font-style: 500;
+}
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(assets/fonts/static/HankenGrotesk-Bold.ttf);
+    font-weight: 700;
+    font-style: 700;
+}
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+    font-weight: 800;
+    font-style: 800;
+}
+
+body{
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Hanken Grotesk';
+   font-weight: 500;
+   font-size: 1.25rem;
+}
+
+section{
+    display: flex;
+    box-shadow: -4px 17px 9px 19px rgba(236, 233, 233, 0.5) ;
+    border-radius: 1.875rem;
+    width: 50%;
+}
+.flex-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2.5rem 0;
+    width: 50%;
+}
+.result-table{
+    background: var(--gradient-bg-1);
+    border-radius: 1.875rem;
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+}
+h3{
+    color: var(--Pale-blue);
+    font-family: Hanken Grotesk;
+    font-weight: 500;
+}
+.circle{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background: var(--gradient-circle);
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 800;
+}
+h2{
+    font-weight: 700;
+    font-size: 2rem;
+}
+p{
+    color: var(--Light-lavender);
+   font-size: 1.125rem;
+}
+.final-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    width: 70%;
+}
+
+.summary-table{
+    padding: 2.5rem 2rem;
+}
+
+.summary{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.scoreboard{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.score-bars{
+    display: flex;
+    justify-content: space-between ;
+    background-color: var(--bg);
+    padding: 0.8rem;
+    border-radius: 0.625rem;
+    font-weight: 700;
+}
+.score-bars>div>span{
+    font-weight: 700;
+}
+.title{
+    color: var(--clr);
+    display: flex;
+    gap: 0.5rem;
+}
+.n100{
+    color: var(--grey);
+    font-weight: 500;
+}
+
+.button{
+    background-color: var(--Dark-gray-blue);
+    padding: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: var(--white);
+    transition: background .5s ease;
+    cursor: pointer;
+    transition-delay: .5s;
+}
+.button:hover{
+    background: var(--gradient-bg-1);
+    
+}
+@media screen and (max-width: 1200px) {
+    html{
+        font-size: 14px;
+    }
+    section{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 12px;
+    }
+    section{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
+    html{
+        font-size: 12px;
+    }
+    body{
+        justify-content:unset;
+        align-items: unset;
+        height: 100vh;
+    }
+    section{
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0 0 1.875rem 1.875rem;
+    }
+    .flex-1{
+        width: 100%;
+        border-radius: 0 0 2.5rem 2.5rem;
+    }
+    .final-text{
+        width: 60%;
+    }
+    .score-bars{
+        padding: 1.5rem;
+        border-radius: 0.625rem;
+    }
+    .button{
+        padding: 1.5rem;
+        border-radius: 3rem;
+        margin: 0;
+    }
+}

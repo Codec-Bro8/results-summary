@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Frontend Mentor | Results summary component</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="flex-1 result-table">
+        <h3>Your Result</h3>
+        <div>
+          <div class="circle"><h1>76</h1><p>of 100</p> </div>
+          
+        </div>
+        <div class="final-text">
+          <h2>Great</h2>
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+      <div class="flex-1 summary-table">
+        <div class="summary">
+          Summary
+        </div>
+        <div class="scoreboard">
+          <div class="score-bars" style="--clr:hsl(0, 100%, 67%); --bg: hsla(0, 91%, 65%, 0.100);  ">
+            <div class="title"><img src="assets/images/icon-reaction.svg">Reaction</div>
+            <div><span>80</span> <span class="n100">/ 100</span></div>
+          </div> 
+          <div class="score-bars" style="--clr:hsl(39, 100%, 56%); --bg: hsla(39, 100%, 56%, 0.100);">
+            <div class="title"><img src="assets/images/icon-memory.svg">Memory</div>
+            <div><span>92</span> <span class="n100">/ 100</span></div>
+          </div> 
+          <div class="score-bars" style="--clr:hsl(166, 100%, 37%); --bg: hsla(166, 100%, 37%, 0.100);">
+            <div class="title"><img src="assets/images/icon-verbal.svg">Verbal</div>
+            <div><span>61</span> <span class="n100">/ 100</span></div>
+          </div> 
+          <div class="score-bars" style="--clr:hsl(234, 85%, 45%); --bg: hsla(234, 85%, 45%, 0.100);">
+            <div class="title"><img src="assets/images/icon-visual.svg">Visual</div>
+            <div><span>72</span> <span class="n100">/ 100</span></div>
+          </div> 
+        </div>
+        <div class="button">Continue</div> 
+      </div> 
+    </section>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Codecbro8</a>.
+    </div> -->
+  </body>
+</html>
